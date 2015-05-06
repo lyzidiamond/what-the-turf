@@ -1,0 +1,475 @@
+<!DOCTYPE html><html><head><title>What the Turf?</title><meta charset='utf-8'><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link href='big.css' rel='stylesheet' type='text/css' />
+<style>
+  .center {
+    text-align: center;
+  }
+  .quote {
+    font-family: serif;
+    letter-spacing: 2px;
+  }
+  .mike {
+    background-image: url(http://images.digital-democracy.org/assets/headshot_Mike_Migurski-1200.jpg);
+    background-position: center 1px;
+    background-repeat: no-repeat;
+    background-size: 99%;
+  }
+  .thiebaud-morning-freeway {
+    background-image: url(http://garagemag.com/wp-content/uploads/2014/08/Wayne7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 99%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .thiebaud-freeway-from-air {
+    background-image: url(http://ayay.co.uk/backgrounds/paintings/wayne_thiebaud/freeway-from-the-air.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #bff5ab;
+    text-shadow: 2px 2px 5px #333;
+  }
+  .thiebaud-freeway {
+    background-image: url(http://art.famsf.org/sites/default/files/artwork/thiebaud/6259302211110074.jpg);
+    background-position: center -200px;
+    background-repeat: no-repeat;
+    background-size: 99%;
+    color: #bff5ab;
+    text-shadow: 5px 5px 5px #333;
+  }
+  .geology {
+    background-image: url(http://classconnection.s3.amazonaws.com/372/flashcards/2470372/jpg/conver1355583815850.jpg);
+    background-repeat: no-repeat;
+    background-position: center 25px;
+    background-color: #fff;
+    color: #111;
+  }
+  .parachute {
+    background-image: url(http://static5.businessinsider.com/image/51eea3c069beddce64000007-1200/parachute-pants-add-weight-and-never-look-polished.jpg);
+    background-position: center 1px;
+    background-repeat: no-repeat;
+    background-size: 99%;
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .cathedral-bazaar {
+    background-image: url(http://manufacturaindependente.com/neural-archive-imgs/fullsize/The_Cathedral_&_The_Bazaar.jpg);
+    background-position: center 1px;
+    background-repeat: no-repeat;
+    background-size: 99%;
+  }
+  .catmap {
+    background-image: url(./images/catmap.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .pirate {
+    background-image: url(./images/pirate.png);
+    background-repeat: no-repeat;
+  }
+  .studio {
+    background-image: url(./images/studio.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .leaflet {
+    background-image: url(./images/leaflet.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .xkcd {
+    background-image: url(./images/xkcd.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center 5px;
+  }
+  .mapboxjs {
+    background-image: url(./images/mapboxjs.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .turf {
+    background-image: url(./images/turf.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .cartodb1 {
+    background-image: url(./images/cartodb1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .winter {
+    background-image: url(./images/winter.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .cartodb2 {
+    background-image: url(./images/cartodb2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .cartodb {
+    background-image: url(./images/cartodb.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .osm {
+    background-image: url(./images/osm.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #eee;
+  }
+  .id {
+    background-image: url(./images/id.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .patterson {
+    background-image: url(http://www.personal.psu.edu/cab38/GEOG321/09_relief02/Cross-blended_NW_US.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #eee;
+  }
+  .qgis-cartography {
+    background-image: url(https://underdark.files.wordpress.com/2015/01/screenshot-2015-01-04-17-37-33.png);
+    background-repeat: no-repeat;
+    background-position: center 5px;
+  }
+  .detroit-blight {
+    background-image: url(https://farm4.staticflickr.com/3917/14526706699_7568d231d6_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center 5px;
+  }
+  .raster2vector {
+    background-image: url(https://farm8.staticflickr.com/7529/15764736756_42d88557cc_b.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .hillshade {
+    background-image: url(https://farm4.staticflickr.com/3884/15164334032_d104851610_b.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .qgis-postgis {
+    background-image: url(https://farm4.staticflickr.com/3914/14606441496_937a989431_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .puppy {
+    background-image: url(http://i.giphy.com/LPQ943m8yMcpy.gif);
+    text-shadow: 3px 3px 5px #222;
+  }
+  .interchange {
+    background-image: url(http://i.imgur.com/0gZ1lNS.jpg);
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    background-size: 99%;
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .cartography {
+    background-image: url(http://i.giphy.com/qelrowmf6jABi.gif);
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .hackers {
+    background-image: url(http://i.giphy.com/xebOoxouppcGs.gif);
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .babyname {
+    background-image: url(http://i.giphy.com/12negYDHaG82n6.gif);
+    text-shadow: 3px 3px 5px #222;
+  }
+  .database {
+    background-image: url(http://i.giphy.com/NbLpoH3dWxKgM.gif);
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .community {
+    background-image: url(http://i.giphy.com/142na7ROkljwKA.gif);
+    text-shadow: 3px 3px 5px #eee;
+  }
+  .stripes {
+    background-image: url(http://i.giphy.com/VyUdvmiZ7Y760.gif);
+    text-shadow: 3px 3px 5px #eee;
+  }
+  .corgi-rainbow {
+    background-image: url(http://i.giphy.com/AQvUFtbARPzsQ.gif);
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .choropleth {
+    background-image: url(http://i.stack.imgur.com/3hBTV.jpg);
+    background-size: 100%;
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .raster-vector {
+    background-image: url(http://upload.wikimedia.org/wikipedia/commons/8/8b/Raster_vector_gis.png);
+    background-size: 100%;
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .data {
+    background-image: url(http://i.giphy.com/rIq6ASPIqo2k0.gif);
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .sotm2012 {
+    background-image: url(http://www.nps.gov/npmap/slides/nps-and-osm/img/sotm-2012-group-photo.jpg);
+    background-size: 100%;
+    background-position: center 70px;
+    color: #eee;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .puppies {
+    background-image: url(http://i.giphy.com/a3xbdPMvwib7i.gif);
+    text-shadow: 3px 3px 5px #222;
+  }
+  .geocoding {
+    background-image: url(http://www.selesti.com/blog/wp-content/uploads/map-pin.jpg);
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .directions {
+    background-image: url(http://previews.123rf.com/images/lightwise/lightwise1111/lightwise111100300/11409512-this-way-that-way-confused-street-sin-post-directions-Stock-Photo.jpg);
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .editing {
+    background-image: url(./images/draggable.gif);
+    text-shadow: 3px 3px 5px #222;
+  }
+  .snow {
+    background-image: url(http://upload.wikimedia.org/wikipedia/commons/2/27/Snow-cholera-map-1.jpg);
+    background-position: center 5px;
+    background-repeat: no-repeat;
+  }
+  .mindblown {
+    background-image: url(http://i.giphy.com/DqSw5gyRQ5yPC.gif);
+  }
+  .buffer {
+    background-image: url(http://wolfgis.com/portals/0/Images/gis-17.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .popdensity {
+    background-image: url(http://upload.wikimedia.org/wikipedia/commons/1/15/Countries_by_population_density.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .puppies2 {
+    background-image: url(http://i.giphy.com/Ic4PVWuolc5TG.gif);
+  }
+  .functionbox {
+    background-image: url(http://www.math.rutgers.edu/~greenfie/summer_135/gifstuff/function_box.gif);
+    background-repeat: no-repeat;
+    background-position: center 25px;
+  }
+  .functionbox1 {
+    background-image: url(https://letsplaymath.files.wordpress.com/2008/05/function-machine.png);
+    background-repeat: no-repeat;
+    background-position: center 25px;
+  }
+  .functionbox2 {
+    background-image: url(http://www.teachingepsilon.com/wp-content/uploads/2013/03/function-box3.gif);
+    background-repeat: no-repeat;
+    background-position: center 25px;
+  }
+  .functionbox3 {
+    background-image: url(http://onemathematicalcat.org/Math/Algebra_II_obj/Graphics/fct_box.gif);
+    background-repeat: no-repeat;
+    background-position: center 25px;
+  }
+  .mbxjscdn {
+    background-image: url(./images/mbxjscdn.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .mapboxjs-map {
+    background-image: url(./images/mapboxjs-map.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .puppies3 {
+    background-image: url(http://i.giphy.com/13RmTVMmTM08tW.gif);
+  }
+  .turfdoc {
+    background-image: url(./images/turfdoc.png);
+    background-size: 100%;
+    background-repaet: no-repeat;
+  }
+  .turf-centroid {
+    background-image: url(./images/turf-centroid.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .centroid-example {
+    background-image: url(./images/centroid-example.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+</style>
+<script src='big.js'></script>
+</head><body>
+
+<div><strong>What the Turf?</strong> Adventures in <em>JavaScript</em> and <em>spatial analysis</em></div>
+<div><em>PLEASE</em> interrupt if you have questions!</div>
+<div>Go to <a href="http://lyzidiamond.com/what-the-turf">http://lyzidiamond.com /what-the-turf</a> to follow along.</div>
+<div>(Use <strong>left</strong> and <strong>right</strong> arrows to navigate. Links have a <a href="#4">purple background</a>.)</div>
+<div>Today we are going to talk about <a href='http://turfjs.org'>Turf.js</a>.</div>
+<div>".js? Wait, we're talking about <em>JavaScript</em>?! I'm <strong>out</strong>!"</div>
+<div>Now just <em>hang on</em> for a second. We are going to <strong>walk thorugh</strong> everything and you can <em>ask questions</em> at any time.</div>
+<div data-bodyclass='puppies'>Plus, here are some puppies.</div>
+<div><strong>First things first:</strong> what is <em>Turf.js</em>?</div>
+<div><iframe src='https://www.mapbox.com/developers/turf/'></iframe></div>
+<div>Some <strong>examples</strong>:</div>
+<div><iframe src='https://www.mapbox.com/blog/playback-the-iditarod-with-turf/'></iframe></div>
+<div><iframe src='https://www.mapbox.com/bites/00090/'></iframe></div>
+<div><strong>Okay.</strong> So <em>GIS</em> in <em>web maps</em>.</div>
+<div>But what does that <strong>mean</strong>, really?</div>
+<div>Let's think about <em>what</em> a <strong>web map</strong> does <em>normally</em>.</div>
+<div><iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/lyzidiamond.m4389el1/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibHl6aWRpYW1vbmQiLCJhIjoiRkh4OW9layJ9.P2o48WlCqjhGmqoFJl3C_A'></iframe></div>
+<div>Displays <strong>map tiles</strong></div>
+<div>Displays <em>interactive map data</em></div>
+<div><strong>Pans</strong>, <em>zooms</em>, other interactions</div>
+<div><iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/lyzidiamond.m4389el1/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibHl6aWRpYW1vbmQiLCJhIjoiRkh4OW9layJ9.P2o48WlCqjhGmqoFJl3C_A'></iframe></div>
+<div>What can you <em>not<em> do right <strong>out of the box</strong>?</div>
+<div data-bodyclass='geocoding'>Geocoding</div>
+<div data-bodyclass='directions'>Directions</div>
+<div data-bodyclass='editing'>Data editing</div>
+<div>You also can't do <strong>analysis</strong> in an <em>out-of-the-box</em> web map.</div>
+<div>What does it mean, <em>spatial data analysis</em>?</div>
+<div data-bodyclass='snow'></div>
+<div>This is a <strong>classic</strong> example of <em>spatial analysis</em>.</div>
+<div><strong>Physician John Snow</strong> created this map during London's <em>cholera outbreak</em> of 1854.</div>
+<div>Snow <em>plotted</em> cholera cases in the Soho area of London around <strong>Broad Street</strong> and noticed a <em>cluster</em> around the <strong>water pump</strong>.</div>
+<div>What did this mean? Through this <em>map</em>, he discovered that cholera was a <strong>water-borne</strong> disease...</div>
+<div>... <em>disproving</em> the commonly-held beliefs in <strong>miasma</strong> at the time.</div>
+<div>This little map...</div>
+<div data-bodyclass='snow'></div>
+<div data-bodyclass='mindblown'></div>
+<div>What other <em>types of analysis</em> can we conduct?</div>
+<div>The <strong>John Snow map</strong> shows us some <em>proximity analysis</em>...</div>
+<div data-bodyclass='buffer'>Buffer analysis</div>
+<div data-bodyclass='popdensity'>Population density</div>
+<div><iframe src='https://www.mapbox.com/labs/turf-bikeshare/'></iframe></div>
+<div>And <em>many</em>, <em>many</em> others.</div>
+<div>Some of you may be saying, "Okay, <strong>so what</strong>? This has been around for a <em>long time</em>."</div>
+<div>You're <strong>not wrong.</div>
+<div>But it has <em>historically</em> been <strong>very difficult</strong> to conduct these types of analyses <em>programmatically</em> in the <strong>browser</strong>.</div>
+<div><em>Why?</em> Think about the <strong>forces at play</strong> here.</div>
+<div>It's the <em>same reason</em> websites will load <strong>slowly</strong> when trying to display a <em>large image</em>.</div>
+<div>Browsers do not have as much <strong>power</strong> as a machine's processor.</div>
+<div>Plus, think about <em>geographic data</em>. What works well for <strong>desktop GIS</strong> doesn't work as wel for <em>browsers</em> and <strong>vice-versa</strong>.</div>
+<div>The types of <em>data formats</em> we use for <strong>desktop GIS</strong> are optimized for <em>processing speed</em> with the assumption that there will be <strong>lots</strong> of data.</div>
+<div>The types of <em>data formats</em> we use for displaying on <strong>web maps</strong> are optimized for <em>speed of display</em> with the assumption that there will be <strong>not as much</strong> data.</div>
+<div>But <em>I digress</em>.</div>
+<div>It has historically been <strong>very difficult</strong> to conduct spatial analysis <em>programmatically</em> in the <strong>browser</strong>.</div>
+<div>Turf <em>changes all that</em>.</div>
+<div>Going <strong>back</strong> for a second, Turf is <em>GIS for web maps</em>.</div>
+<div>What is the <strong>language</strong> of web maps?</div>
+<div><em>JavaScript!</em></div>
+<div>But Turf does <strong>not</strong> <em>display</em> web maps for us.</div>
+<div>It does not <strong>add tiles</strong> or <em>enable zooming and panning</em>.</div>
+<div>What it <strong>does</strong> do is:</div>
+<div>1. Take <em>GeoJSON</em> as <strong>input</strong></div>
+<div>2. Conduct <strong>analysis</strong> on that <em>GeoJSON</em></div>
+<div>3. Return <em>GeoJSON</em> as <strong>output</strong></div>
+<div>And it does it with <em>JavaScript</em>.</div>
+<div data-bodyclass='puppies2'></div>
+<div>Let's talk about <strong>JavaScript</strong> for a second.</div>
+<div><em>JavaScript</em> is a language for <strong>making things happen</strong> in your browser.</div>
+<div>If you think about a <em>website</em> like a <strong>sentence...</strong></div>
+<div>... <em>HTML</em> is the <strong>noun</strong>, <em>CSS</em> is the <strong>adjective</strong>, and <em>JavaScript</em> is the <strong>verb</strong>.</div>
+<div><em>JavaScript</em> and <strong>Java</strong> are NOT related.</div>
+<div>Just a <em>brief introduction</em> to <strong>programming concepts</strong>...</div>
+<div><em>Variables:</em> placeholders.</div>
+<div><pre><span>var x = 4</span></pre></div>
+<div><em>Objects:</em> buckets of <strong>different values</strong> that can be <em>grouped together</em>.</div>
+<div>Let's say we have an object <strong>dog</strong>. What does a <strong>dog</strong> have?</div>
+<div>A <strong>dog</strong> has a <em>name</em>.</div>
+<div>A <strong>dog</strong> has an <em>age</em>.</div>
+<div>A <strong>dog</strong> has a <em>breed</em>.</div>
+<div>So we can use our <strong>dog</strong> object to <em>store</em> all of this information <strong>together</strong>.</div>
+<div><pre><span style="display:block;">var dog = {<br>&nbsp;&nbsp;name: 'Wiggles',<br>&nbsp;&nbsp;age: 2,<br>&nbsp;&nbsp;breed: 'corgi'<br>}</span></pre></div>
+<div>Now, when we want to find the <strong>dog</strong>'s <em>age</em>, we can access them this way:</div>
+<div><pre><span>dog.age; // 2</span></pre></div>
+<div><em>Classes:</em> a way to <strong>create</strong> similar objects <em>over and over</em> again.</div>
+<div>Let's say we want to have <strong>five</strong> dogs. <em>Each</em> dog has a <strong>name</strong>, <strong>age</strong>, and <strong>breed</strong>.</div>
+<div>Instead of <em>re-defining</em> what a <strong>dog</strong> is each time, we can make a <strong>dog</strong> <em>class</em>.</div>
+<div><pre><span style='display:block;'>function Dog(name, age, breed) {<br>&nbsp;&nbsp;this.name = name;<br>&nbsp;&nbsp;this.age = age;<br>&nbsp;&nbsp;this.breed = breed;<br>}</span></pre></div>
+<div>Now when we create a <em>new</em> dog:</div>
+<div><pre><span style='display: block;'>var newDog = new Dog('Spinner', 4, 'german shepherd');</span></pre></div>
+<div><pre><span>newDog.name; // 'Spinner'</span></pre></div>
+<div><strong>Cool.</strong> But what are all these <em>parentheses</em> about?</div><div>In a very <em>stripped-down</em> way, JavaScript works by <strong>taking values</strong>, <em>doing</em> something to them, and <strong>returning</strong> the result.</div>
+<div data-bodyclass='functionbox'>Does anyone remember <em>function boxes</em> from <strong>elementary school</strong>?</div>
+<div data-bodyclass='functionbox1'></div>
+<div data-bodyclass='functionbox2'></div>
+<div data-bodyclass='functionbox3'></div>
+<div>This is the <em>same thing</em> you're doing in JavaScript.</div>
+<div>When we made <pre><span>newDog</span></pre>, we passed <strong>three</strong> values into our <pre><span>Dog</span></pre> function box...</div>
+<div>... and it returned a <pre><span>newDog</span></pre>!</div>
+<div>Now let's take this <em>same philosophy</em> and apply it to <strong>web maps</strong>.</div>
+<div>When you're using a <em>web mapping library</em> like <a href='https://leafletjs.com'>Leaflet</a> or <a href='https://mapbox.com/mapbox.js'>Mapbox.js</a>, you <strong>add</strong> it to your HTML page.</div>
+<div data-bodyclass='mbxjscdn'></div>
+<div>Mapbox.js is full of <em>pre-written functions</em> and <em>classes</em> we can use to <strong>make web maps</strong>.</div>
+<div>For example, when you make a <em>map</em> with <pre><span>L.mapbox.map()</span></pre>...</div>
+<div data-bodyclass='mapboxjs-map'></div>
+<div><pre><span>L.mapbobx.map()</span></pre> is a <strong>class</strong>. It creates a <em>web map</em>.</div>
+<div>It takes two values: a <em>string of text</em> representing the <strong>ID</strong> of the <pre><span>div</span></pre> on the page to put the map...</div>
+<div>... and a <em>string of text</em> representing the <strong>ID</strong> of the <em>Mapbox map</em> to put there.</div>
+<div data-bodyclass='mapboxjs-map'></div>
+<div>Classes can also have <strong>methods</strong>: these are <em>functions</em> that can be used to <strong>change</strong> or <strong>manipulate</strong> the instance of the class, or <em>use</em> the instance to do something else.</div>
+<div>(<strong>that's</strong> what's going on with <pre><span>.setView()</span></pre>)</div>
+<div><em>Okay.</em> I think it's <strong>time</strong> for...</div>
+<div data-bodyclass='puppies3'></div>
+<div>Let's think about <em>data</em> on web maps.</div>
+<div><strong>Most</strong> of the time, you're going to want to <em>add</em> data to your map in <strong>GeoJSON</strong> format.</div>
+<div>(If you want to <em>learn more</em> about GeoJSON, check out <a href='https://github.com/lyzidiamond/learn-geojson'>this exercise</a>.)</div>
+<div>(Or check out <a href='http://lyzidiamond.com/geojson-in-maps/'>these slides</a> from <strong>"GeoJSON on Web Maps"</strong>)</div>
+<div><em>Most</em> of the time, we <strong>create</strong> or <strong>find</strong> GeoJSON data and <em>add</em> it to the map.</div>
+<div>With <em>Turf</em>, we are going to <strong>create</strong> or <strong>find</strong> GeoJSON data, <em>add</em> it to the map,<em>run analysis</em> on it, and add our <strong>results</strong> to the map as well.</div>
+<div>Head to <a href='http://turfjs.org'>turfjs.org</a>.</div>
+<div>A <strong>quick note</strong>: we are going to use Turf <em>in the browser</em>.</div>
+<div>You could <em>also</em> use Turf on the <strong>server-side</strong> with <em>Node.js</em>...</div>
+<div>... but we're <strong>not</strong> going to do that today.</div>
+<div>(We can talk about it <em>later</em> if you want.)</div>
+<div>At the <strong>top</strong> of the page, click <em>API Docs</em>.</div>
+<div data-bodyclass='turfdoc'></div>
+<div><strong>Disclaimer:</strong> I <em>wrote</em> and <em>created</em> a lot of this documentation.</div>
+<div><strong>Feel free</strong> to tell me if something <em>doesn't make sense</em>!</div>
+<div>Let's start with one of my <strong>favorites</strong>. In the <em>left column</em>, click on <a href='http://turfjs.org/static/docs/module-turf_centroid.html'>centroid</a>.</div>
+<div data-bodyclass='turf-centroid'></div>
+<div><em>Parameters:</em> the values you <strong>pass</strong> to the function.</div>
+<div><em>Returns:</em> what to <strong>expect</strong> from the function.</div>
+<div>Now take a look at the <em>example</em>.</div>
+<div data-bodyclass='centroid-example'></div>
+<div>This documentation is <strong>super cool</strong> because...</div>
+
+<div><pre><span>poly</span></pre> is our <strong>GeoJSON polygon</strong>.</div>
+<div>
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47757349-1', 'lyzidiamond.com');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
